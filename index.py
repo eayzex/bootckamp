@@ -1,3 +1,3 @@
-mystring = "i love python"
-
-print(mystring[8:11])
+numbers = range(4, 19)
+for num in numbers :
+    print(num)
