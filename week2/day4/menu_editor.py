@@ -15,10 +15,9 @@ def show_user_menu():
         print("S - Show the Full Menu")
         print("E - Exit")
         
-        choice = input("Enter your choice: ").strip().upper()  
-        
+        choice = input("Enter your choice: ").upper()        
         if choice == 'V':
-            view_item()
+            view_items()
         elif choice == 'A':
             add_item_to_menu()
         elif choice == 'D':
@@ -30,6 +29,7 @@ def show_user_menu():
         elif choice == 'E':
             print("Thank you for using the system! Goodbye!")
             break  
+        else:
             print("Invalid choice, please try again.")
 
 def add_item_to_menu():
@@ -80,7 +80,7 @@ def show_restaurant_menu():
     for item in items:
         print(f"{item[0]} - {item[1]}: {item[2]} MAD") 
 
-def view_items (): 
+def view_items(): 
     name = input( "enter the name of the item to view ")
     item = MenuManager.get_by_name(name) 
     if item : 
