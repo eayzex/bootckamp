@@ -12,7 +12,7 @@ class MenuManager:
 
     @classmethod
     def all_items(cls):
-        connection = psycopg2.connect(database="restaurant_menu", user="postgres", password="yourpassword", host="localhost", port="5432")
+        connection = psycopg2.connect(database="restaurant_menu", user="postgres", password="12345678", host="localhost", port="5432")
         cursor = connection.cursor()
         cursor.execute("SELECT * FROM Menu_Items")
         items = cursor.fetchall()

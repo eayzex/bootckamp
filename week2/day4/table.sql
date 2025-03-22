@@ -5,3 +5,4 @@ item_price smallint default 0
  );
  select * from menu_items; 
 
+DELETE FROM Menu_Items WHERE item_id = 10

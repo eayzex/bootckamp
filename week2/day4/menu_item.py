@@ -17,15 +17,16 @@ class MenuItem():
         
 
     def delete(self):
-        connection = psycopg2.connect(database="restaurant_menu", user="postgres", password="yourpassword", host="localhost", port="5432")
+        connection = psycopg2.connect(database="restaurant_menu", user="postgres", password="12345678", host="localhost", port="5432")
         cursor = connection.cursor()
-        cursor.execute("DELETE FROM Menu_Items WHERE item_name = %s", (self.name,))
+        cursor.execute("DELETE FROM Menu_Items WHERE item_id = %s", (self.name,))
         connection.commit()
         connection.close()
         print(f"{self.name}")
+        return True
 
     def update(self, new_name, new_price):
-        connection = psycopg2.connect(database="restaurant_menu", user="postgres", password="yourpassword", host="localhost", port="5432")
+        connection = psycopg2.connect(database="restaurant_menu", user="postgres", password="12345678", host="localhost", port="5432")
         cursor = connection.cursor()
         cursor.execute("UPDATE Menu_Items SET item_name = %s, item_price = %s WHERE item_name = %s", (new_name, new_price, self.name))
         connection.commit()
@@ -33,3 +34,7 @@ class MenuItem():
         print(f"{self.name} {new_name} {new_price}.")
 
 
+item = MenuItem('tacos',50)
+# item.save()
+# item.delete()
+item.update('cofee',90)
