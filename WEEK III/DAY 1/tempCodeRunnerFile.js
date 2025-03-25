@@ -1,5 +1,6 @@
-console.log("Number of floors:", building.numberOfFloors);
+function userInfo(userName, userAge) {
+    console.log("My name is " + userName + ", my age is "  + userAge);
+}
 
-
-console.log("Apartments on first floor:", building.numberOfAptByFloor.firstFloor);
-console.log("Apartments on third floor:", building.numberOfAptByFloor.thirdFloor);
+userInfo("Sarah", 22);  // سيطبع: My name is Sarah, my age is 22
+userInfo("Ben", 40);
