@@ -1,0 +1,10 @@
+function sayHi() {
+    alert("Hello!");
+  }
+  
+  // تعيين المؤقت
+  let timerId = setTimeout(sayHi, 5000); // سيتم تنفيذ الدالة بعد 5 ثوانٍ
+  
+  // إلغاء المؤقت قبل انتهاء المهلة
+  clearTimeout(timerId);
+  
