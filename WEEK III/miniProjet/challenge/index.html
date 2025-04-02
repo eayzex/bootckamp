@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TO-DO LIST</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>TO-DO LIST</h1>
+        <div class="input-container">
+            <input type="text" id="taskInput" placeholder="new task">
+            <button id="addBtn">ADD</button>
+        </div>
+        <div class="listTasks" id="taskList">
+            <div class="task-item" data-task-id="0">
+                <input type="checkbox" class="task-checkbox">
+                <label class="task-label">Vanilla JavaScript</label>
+                <button class="delete-btn">✓</button>
+            </div>
+            <div class="task-item" data-task-id="1">
+                <input type="checkbox" class="task-checkbox">
+                <label class="task-label">Vue.js</label>
+                <button class="delete-btn">✓</button>
+            </div>
+            <div class="task-item" data-task-id="2">
+                <input type="checkbox" class="task-checkbox">
+                <label class="task-label">React.js</label>
+                <button class="delete-btn">✓</button>
+            </div>
+            <div class="task-item" data-task-id="3">
+                <input type="checkbox" class="task-checkbox">
+                <label class="task-label">Node.js</label>
+                <button class="delete-btn">✓</button>
+            </div>
+        </div>
+        <button id="clearBtn">Clear</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

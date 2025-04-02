@@ -1,5 +1,8 @@
-let li = document.querySelectorAll("li")
-console.log(li);
-let li2 = document.getElementsByTagName("li")
-console.log(li2);
+let numbers = [1, 2, 3, 4, 5];
+let sum = 0;
 
+for (let number of numbers) {
+  sum += number;
+}
+
+console.log(sum);

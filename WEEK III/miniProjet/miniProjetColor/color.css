@@ -1,0 +1,52 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+.container {
+    display: flex;
+    gap: 10px;
+}
+
+.color-palette {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.colors {
+    display: grid;
+    grid-template-columns: repeat(2, 50px); /* عمودان بدلاً من أربعة */
+    grid-gap: 5px;
+}
+
+.color {
+    width: 50px; /* تكبير حجم اللون */
+    height: 50px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+}
+
+#clear {
+    padding: 10px;
+    background-color: #ddd;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(30, 20px);
+    grid-template-rows: repeat(30, 20px);
+    border: 1px solid #ccc;
+}
+
+.cell {
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border: 1px solid #eee;
+}
