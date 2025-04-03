@@ -1,8 +1,11 @@
-let numbers = [1, 2, 3, 4, 5];
-let sum = 0;
+function checkAge(age) {
+  if (age < 18) {
+    const message = "Sorry, you're too young.";
+  } else {
+    const message = "Yay! You're old enough!";
+  }
 
-for (let number of numbers) {
-  sum += number;
+  return message;
 }
 
-console.log(sum);
+console.log(checkAge(21));
