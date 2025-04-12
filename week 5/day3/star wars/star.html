@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Star Wars Characters</title>
+    <link rel="stylesheet" href="star.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Star Wars Characters</h1>
+        <button id="loadCharacterBtn">Get Random Character</button>
+        <div id="loading" class="hidden">
+            <i class="fas fa-spinner fa-spin"></i> Loading...
+        </div>
+        <div id="characterDetails" class="hidden">
+            <h2 id="characterName"></h2>
+            <p><strong>Height:</strong> <span id="characterHeight"></span></p>
+            <p><strong>Gender:</strong> <span id="characterGender"></span></p>
+            <p><strong>Birth Year:</strong> <span id="characterBirthYear"></span></p>
+            <p><strong>Home World:</strong> <span id="characterHomeWorld"></span></p>
+        </div>
+        <div id="errorMessage" class="hidden">
+            <p>Error loading data. Please try again.</p>
+        </div>
+    </div>
+
+    <script src="star.js"></script>
+</body>
+</html>

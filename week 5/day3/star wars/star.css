@@ -1,0 +1,71 @@
+/* Custom body styling with background image */
+body {
+    background-color: black;
+    background-image: url(https://i.giphy.com/media/TxVVB6PfWMjE4/200.webp);
+    font-family: 'Helvetica Neue', sans-serif;
+    color: yellow;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container for centering the content */
+.container {
+    margin-left: 300px;
+    margin-top: 180px;
+    text-align: center;
+    max-width: 600px;
+    width: 100%;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+}
+
+h1 {
+    font-size: 2rem;
+    color: #ffcc00;
+}
+
+button {
+    background-color: #ffcc00;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #ffb700;
+}
+
+#loading {
+    font-size: 1.2rem;
+    display: none;
+}
+
+#characterDetails {
+    font-size: 1.2rem;
+    margin-top: 20px;
+}
+
+#characterName {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+#characterDetails p {
+    margin: 5px 0;
+}
+
+#errorMessage {
+    color: red;
+    font-size: 1.2rem;
+    margin-top: 20px;
+}
+
+.hidden {
+    display: none;
+}

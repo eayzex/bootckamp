@@ -1,0 +1,119 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: 
+        linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+        url('https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Flag_of_Palestine.svg/1200px-Flag_of_Palestine.svg.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #fff;
+}
+
+.converter-container {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    padding: 30px;
+    width: 90%;
+    max-width: 450px;
+    text-align: center;
+    border: 2px solid #1e3a8a;
+}
+
+h1 {
+    color: #1e3a8a;
+    margin-bottom: 20px;
+    font-size: 26px;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+}
+
+.palestine-message {
+    background-color: #1e3a8a;
+    color: white;
+    padding: 12px;
+    border-radius: 8px;
+    margin-bottom: 25px;
+    font-weight: bold;
+    font-size: 18px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.conversion-group {
+    margin-bottom: 25px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333;
+    font-size: 16px;
+}
+
+select, input {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #1e3a8a;
+    border-radius: 8px;
+    font-size: 16px;
+    box-sizing: border-box;
+    background-color: rgba(255,255,255,0.9);
+}
+
+.switch-btn {
+    background-color: #1e3a8a;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 15px 0;
+    transition: all 0.3s;
+    font-weight: bold;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.switch-btn:hover {
+    background-color: #152c6b;
+    transform: translateY(-2px);
+}
+
+.convert-btn {
+    background-color: #1e3a8a;
+    color: white;
+    border: none;
+    padding: 14px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    width: 100%;
+    margin-top: 15px;
+    transition: all 0.3s;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.convert-btn:hover {
+    background-color: #152c6b;
+    transform: translateY(-2px);
+}
+
+.result {
+    margin-top: 25px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #1e3a8a;
+    padding: 15px;
+    background-color: rgba(240, 244, 255, 0.9);
+    border-radius: 8px;
+    display: none;
+    border: 2px solid #1e3a8a;
+}
